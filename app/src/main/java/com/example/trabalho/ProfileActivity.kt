@@ -1,31 +1,25 @@
 package com.example.trabalho
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        // Carrega o seu layout de perfil
+        setContentView(R.layout.activity_profile)
+
+        // Aplica o padding para a tela cheia (edge-to-edge)
+        // ATENÇÃO: Isso espera que o layout raiz do seu activity_profile.xml tenha o ID "profile_root"
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.profile_root)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val loginButton: View = findViewById(R.id.Login)
-
-        loginButton.setOnClickListener {
-            val intent = Intent(this, ProfileActivity::class.java)
-
-            startActivity(intent)
-        }
-
     }
 }
