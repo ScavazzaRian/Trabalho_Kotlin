@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Trabalho</string>
+
+    <!-- Content Descriptions -->
+    <string name="menu_description">Menu</string>
+    <string name="home_description">Home</string>
+    <string name="profile_description">Perfil</string>
+
+    <string name="step_number">%1$d</string>
+    <string name="time_label">Tempo estimado:</string>
+    <string name="formatted_time">%1$02d:%2$02d</string>
+    <string name="exercise_image">Imagem do exercício</string>
+    <string name="exercise_not_found">Exercício não encontrado</string>
+
+    <string name="listen_label">Escutar:</string>
+    <string name="play_pause">Reproduzir/Pausar</string>
+    <string name="back">Voltar</string>
 </resources>
