@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Shadow/Outer ring for depth -->
+    <item>
+        <shape android:shape="oval">
+            <size 
+                android:width="24dp" 
+                android:height="24dp" />
+            <solid android:color="#1A000000" />
+        </shape>
+    </item>
+    
+    <!-- Main thumb -->
+    <item
+        android:top="2dp"
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp">
+        <shape android:shape="oval">
+            <size 
+                android:width="20dp" 
+                android:height="20dp" />
+            
+            <!-- Gradient for depth -->
+            <gradient
+                android:type="radial"
+                android:gradientRadius="10dp"
+                android:startColor="#FFFFFF"
+                android:centerColor="#F5F5F5"
+                android:endColor="#E0E0E0" />
+            
+            <!-- Contrasting border -->
+            <stroke 
+                android:width="3dp" 
+                android:color="#2E7D5F" />
+        </shape>
+    </item>
+    
+</layer-list>
