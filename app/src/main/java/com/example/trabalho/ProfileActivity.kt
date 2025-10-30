@@ -1,6 +1,8 @@
 package com.example.trabalho
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,6 +22,14 @@ class ProfileActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val homeButton: View = findViewById(R.id.nav_home)
+
+        homeButton.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+
+            startActivity(intent)
         }
     }
 }
