@@ -6,79 +6,53 @@ import com.example.trabalho.R
 object ExerciseData {
     fun obterExercicios(): List<Exercise> {
         return listOf(
-            // Alongamento de Isquiotibiais Sentado
-            Exercise(
+           Exercise(
                 id = 1,
-                titulo = "Alongamento de Isquiotibiais Sentado",
+                titulo = "Corrida",
                 imagemResId = R.drawable.exercise_1,
                 audioResId = R.raw.exercise_1_audio,
-                tempo = 30,
                 passos = listOf(
-                    "Fique em pé ou sentado com a coluna reta",
-                    "Incline-se para frente mantendo a costas ereta, coloque as mãos sobre a coxa.",
-                    "Abaixe o tronco um pouco mais, sem forçar ou curvar as costas",
-                    "Volte devagar para a posição inicial. Depois, repita o mesmo processo com a outra perna."
-                )
+                    "Aqueça com caminhada leve por 5 minutos",
+                    "Corra em ritmo moderado por 20 minutos",
+                    "Desacelere com caminhada leve por 5 minutos"
+                ),
+                tempo = 30*60
             ),
-
-            // Alongamento Matinal de Pernas
             Exercise(
                 id = 2,
-                titulo = "Alongamento Matinal de Pernas",
+                titulo = "Alongamento",
                 imagemResId = R.drawable.exercise_1,
                 audioResId = R.raw.exercise_1_audio,
-                tempo = 30,
                 passos = listOf(
-                    "Sente-se confortavelmente com a coluna ereta",
-                    "Estenda uma perna à frente e flexione levemente a outra",
-                    "Incline-se suavemente para frente, mantendo as costas retas",
-                    "Segure a posição por alguns segundos e retorne lentamente"
-                )
+                    "Alongue braços e ombros por 1 minuto",
+                    "Alongue pernas e quadris por 2 minutos",
+                    "Respire fundo e relaxe por 1 minuto"
+                ),
+                tempo = 5*60
             ),
-
-            // Relaxamento Pós-Treino de Posteriores
             Exercise(
                 id = 3,
-                titulo = "Relaxamento Pós-Treino de Posteriores",
+                titulo = "Yoga",
                 imagemResId = R.drawable.exercise_1,
                 audioResId = R.raw.exercise_1_audio,
-                tempo = 30,
                 passos = listOf(
-                    "Posicione-se sentado com uma perna estendida",
-                    "Mantenha a coluna alinhada e relaxe os ombros",
-                    "Deslize as mãos pela coxa em direção ao joelho",
-                    "Respire profundamente e volte à posição inicial com calma"
-                )
+                    "Postura da montanha por 1 minuto",
+                    "Cachorro olhando para baixo por 2 minutos",
+                    "Postura da criança por 2 minutos"
+                ),
+                tempo = 5*60
             ),
-
-            // Alongamento para Escritório
             Exercise(
                 id = 4,
-                titulo = "Alongamento para Escritório",
+                titulo = "Treino de força",
                 imagemResId = R.drawable.exercise_1,
                 audioResId = R.raw.exercise_1_audio,
-                tempo = 30,
                 passos = listOf(
-                    "Sente-se na beira da cadeira com os pés no chão",
-                    "Estenda uma perna mantendo o calcanhar apoiado",
-                    "Incline-se gentilmente para frente sem curvar as costas",
-                    "Mantenha por 15-20 segundos e troque de perna"
-                )
-            ),
-
-            // Flexibilidade de Isquiotibiais
-            Exercise(
-                id = 5,
-                titulo = "Flexibilidade de Isquiotibiais",
-                imagemResId = R.drawable.exercise_1,
-                audioResId = R.raw.exercise_1_audio,
-                tempo = 30,
-                passos = listOf(
-                    "Comece em posição sentada com coluna ereta",
-                    "Estenda uma perna e mantenha a outra flexionada",
-                    "Avance o tronco para frente mantendo alinhamento",
-                    "Sinta o alongamento na parte posterior da perna e retorne"
-                )
+                    "Agachamentos: 3 séries de 15",
+                    "Flexões: 3 séries de 10",
+                    "Prancha: 3 séries de 30 segundos"
+                ),
+                tempo = 2*60
             )
             // Adicione mais exercícios aqui
             // Exercise(
